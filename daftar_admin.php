@@ -2,21 +2,20 @@
 
 include('functions.php');
 
-if(isset($_POST['login'])) {
-    login($_POST);
+if(isset($_POST['daftar'])) {
+    daftar_admin($_POST);
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Daftar Admin</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <h1>Daftar Admin</h1>
     <form action="" method="post">
         <table cellpadding="5">
             <tr>
@@ -31,7 +30,7 @@ if(isset($_POST['login'])) {
 
             <tr>
                 <td></td>
-                <td><button type="submit" name="login">Login</button></td>
+                <td><button type="submit" name="daftar">Daftar</button></td>
             </tr>
             
         </table>

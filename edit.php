@@ -1,6 +1,6 @@
 <?php
 
-include('config.php');
+include('functions.php');
 
 $id = $_GET['id'];
 $data_peserta = mysqli_query($conn, "SELECT * FROM registration WHERE id = $id")->fetch_assoc();
